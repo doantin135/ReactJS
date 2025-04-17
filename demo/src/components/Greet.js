@@ -1,16 +1,12 @@
 import React from 'react';
 
-// function Greet() {
-//   return <h1>Hello doan tin</h1>;
-// }
 const Greet = props => {
-    console.log(props)
+    const { name, heroName } = props; // Destructuring props
     return (
         <div>
             <h1>
-                Hello {props.name} a.k.a {props.heroName}
+                Hello {name} a.k.a {heroName}
             </h1>
-            {props.children}
         </div>
    
 )
